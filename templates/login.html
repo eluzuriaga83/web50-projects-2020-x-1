@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Loging Page
+{% endblock %}
+
+
+{% block content %}
+
+
+    <div class="col-md-6" style="margin-left: 250px;padding-top: 50px">
+        <!-- Material form register -->
+        <div class="card">
+
+            <h5 class="card-header bg-info mb-3 text-white text-center py-4">
+                <strong>Sign up</strong>
+            </h5>
+
+            <!--Card content-->
+            <div class="card-body px-lg-5 pt-0">
+
+                <!-- Form -->
+                <form class="text-center" style="color: #757575;" action="{{ url_for('login') }}" method="post">
+
+                    <!-- Username -->
+                    <div class="md-form mt-0">
+                        
+                        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                        <label for="uname">Username:</label>
+                
+                    </div>
+
+                    <!-- Password -->
+                    <div class="md-form">
+                        <input type="password" id="pswd" placeholder="Enter password" name="pswd"  class="form-control"  required>
+                        <label for="materialRegisterFormPassword">Password</label>
+                        <small id="materialRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
+                            At least 8 characters and 1 digit
+                        </small>
+                    </div>
+
+                    
+                    <!-- Sign up button -->
+                    <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+
+
+                    <hr>
+
+                    <!-- Terms of service -->
+                    <p><em>Not a member?</em> 
+                        <a href="{{ url_for('register') }}">Register</a></p>
+
+                </form>
+                <!-- Form -->
+
+            </div>
+
+        </div>
+        <!-- Material form register -->
+
+    </div>    
+
+{% endblock %}

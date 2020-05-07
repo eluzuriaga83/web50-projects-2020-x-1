@@ -1,0 +1,42 @@
+body{
+    /*margin:40px;   */
+    margin-left: 100px; 
+    margin-right: 100px;
+    background-color:papayawhip;
+}
+.mainbox{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url("../static/BookStore.png");
+    height: 500px;
+    padding: 25px;
+  }
+
+.boxbooksdetails{
+    padding: 25px;
+    padding-top: 100px;
+}
+  
+
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+main
+{
+
+    /* center contents */
+    text-align: left;
+}
+.flashmessage{
+    font-style: italic;
+    color: red;
+}
